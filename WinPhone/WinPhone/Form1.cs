@@ -12,11 +12,13 @@ namespace WinPhone
 {
     public partial class Form1 : Form
     {
+        GetCelcius celcius = new GetCelcius();
         public Form1()
         {
             InitializeComponent();
             Date.Text = DateTime.Today.Year.ToString() + "년 " + DateTime.Today.Month.ToString() + "월 " + DateTime.Today.Day.ToString() + "일"; // Date라벨에 오늘 날짜를 표시
             Time.Text = DateTime.Now.ToShortTimeString();   // Time라벨에 현재 시간 표시
+            Celcius.Text = celcius.Celcius();
         }
 
         private void CurrentTimeTick(object sender, EventArgs e)
