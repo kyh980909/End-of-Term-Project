@@ -29,25 +29,57 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.SelectVillage = new System.Windows.Forms.ComboBox();
             this.Select = new System.Windows.Forms.Button();
+            this.SelectCountry = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 56);
+            this.label2.Location = new System.Drawing.Point(6, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 15);
+            this.label2.Size = new System.Drawing.Size(51, 12);
             this.label2.TabIndex = 3;
             this.label2.Text = "주소(구)";
             // 
-            // comboBox2
+            // label3
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 12);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "주소(읍/면/동)";
+            // 
+            // SelectVillage
+            // 
+            this.SelectVillage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SelectVillage.FormattingEnabled = true;
+            this.SelectVillage.Location = new System.Drawing.Point(104, 117);
+            this.SelectVillage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SelectVillage.Name = "SelectVillage";
+            this.SelectVillage.Size = new System.Drawing.Size(106, 20);
+            this.SelectVillage.TabIndex = 4;
+            this.SelectVillage.SelectedIndexChanged += new System.EventHandler(this.SelectVillage_SelectedIndexChanged);
+            // 
+            // Select
+            // 
+            this.Select.Location = new System.Drawing.Point(81, 174);
+            this.Select.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Select.Name = "Select";
+            this.Select.Size = new System.Drawing.Size(66, 18);
+            this.Select.TabIndex = 6;
+            this.Select.Text = "확인";
+            this.Select.UseVisualStyleBackColor = true;
+            this.Select.Click += new System.EventHandler(this.Select_Click);
+            // 
+            // SelectCountry
+            // 
+            this.SelectCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SelectCountry.FormattingEnabled = true;
+            this.SelectCountry.Items.AddRange(new object[] {
             "강남구",
             "강동구",
             "강북구",
@@ -73,65 +105,24 @@
             "종로구",
             "중구",
             "중랑구"});
-            this.comboBox2.Location = new System.Drawing.Point(119, 53);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 23);
-            this.comboBox2.TabIndex = 2;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 149);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "주소(읍/면/동)";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "개포동",
-            "논현동",
-            "대치동",
-            "일원동",
-            "수서동",
-            "도곡동",
-            "삼성동",
-            "세곡동",
-            "자곡동",
-            "율현동",
-            "신사동",
-            "압구정동",
-            "역삼동",
-            "청담동"});
-            this.comboBox3.Location = new System.Drawing.Point(119, 146);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 23);
-            this.comboBox3.TabIndex = 4;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
-            // 
-            // Select
-            // 
-            this.Select.Location = new System.Drawing.Point(93, 218);
-            this.Select.Name = "Select";
-            this.Select.Size = new System.Drawing.Size(75, 23);
-            this.Select.TabIndex = 6;
-            this.Select.Text = "확인";
-            this.Select.UseVisualStyleBackColor = true;
-            this.Select.Click += new System.EventHandler(this.Select_Click);
+            this.SelectCountry.Location = new System.Drawing.Point(104, 42);
+            this.SelectCountry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SelectCountry.Name = "SelectCountry";
+            this.SelectCountry.Size = new System.Drawing.Size(106, 20);
+            this.SelectCountry.TabIndex = 2;
+            this.SelectCountry.SelectedIndexChanged += new System.EventHandler(this.SelectCountry_SelectedIndexChanged);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.ClientSize = new System.Drawing.Size(247, 202);
             this.Controls.Add(this.Select);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.SelectVillage);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.SelectCountry);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -141,9 +132,9 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Button Select;
+        private System.Windows.Forms.ComboBox SelectCountry;
+        public System.Windows.Forms.ComboBox SelectVillage;
     }
 }
