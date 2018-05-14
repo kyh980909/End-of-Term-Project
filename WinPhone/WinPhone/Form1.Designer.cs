@@ -50,7 +50,7 @@
             this.StateBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StateBar.Name = "StateBar";
             this.StateBar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.StateBar.Size = new System.Drawing.Size(395, 33);
+            this.StateBar.Size = new System.Drawing.Size(332, 33);
             this.StateBar.TabIndex = 0;
             this.StateBar.TabStop = false;
             // 

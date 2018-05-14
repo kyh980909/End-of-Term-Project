@@ -25,7 +25,7 @@ namespace WinPhone
 
             JObject job = JObject.Parse(contents);  // json파일 사용하기 위해 사용
 
-            return job["weather"]["minutely"][0]["temperature"]["tc"].ToString().Substring(0, 2) + "°"; // 
+            return job["weather"]["minutely"][0]["temperature"]["tc"].ToString().Substring(0, 2) + "°"; // 날씨 api에서 가져온 날씨 정보를 반환
         }
 
         public void City(string city)
