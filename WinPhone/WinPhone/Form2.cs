@@ -44,6 +44,98 @@ namespace WinPhone
                     foreach (var item in villageList)
                         SelectVillage.Items.Add(item);
                     break;
+                case "강북구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "강서구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "관악구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "광진구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "구로구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "금천구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "노원구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "도봉구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "동대문구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "동작구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "마포구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "서대문구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "서초구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "성동구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "성북구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "송파구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "양천구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "영등포구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "용산구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "은평구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "종로구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "중구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
+                case "중랑구":
+                    foreach (var item in villageList)
+                        SelectVillage.Items.Add(item);
+                    break;
                 default:
                     break;
             }
