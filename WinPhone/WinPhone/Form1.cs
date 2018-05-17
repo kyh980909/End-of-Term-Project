@@ -19,8 +19,9 @@ namespace WinPhone
             InitializeComponent();
             Date.Text = DateTime.Today.Year.ToString() + "년 " + DateTime.Today.Month.ToString() + "월 " + DateTime.Today.Day.ToString() + "일"; // Date라벨에 오늘 날짜를 표시
             Time.Text = DateTime.Now.ToShortTimeString();   // Time라벨에 현재 시간 표시
-            Celcius.Text = celcius.Celcius();
-            Country.Text = celcius.country;
+            CelciusLabel.Text = celcius.Celcius();
+            CountryLabel.Text = celcius.countryValue;
+            VillageLabel.Text = celcius.villegeValue;
         }
 
         private void CurrentTimeTick(object sender, EventArgs e)

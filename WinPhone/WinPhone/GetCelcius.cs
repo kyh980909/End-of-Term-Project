@@ -10,9 +10,9 @@ namespace WinPhone
 {
     class GetCelcius
     {
-        public string city = "서울";
-        public string country = "노원구";
-        public string villege = "상계동";
+        public string cityValue = "서울";
+        public string countryValue = "노원구";
+        public string villegeValue = "상계동";
 
 
         public string Celcius()
@@ -21,7 +21,7 @@ namespace WinPhone
 
             web.Encoding = Encoding.UTF8;       // 한글깨짐을 방지하기위해 인코딩
 
-            var contents = web.DownloadString(@"https://api2.sktelecom.com/weather/current/minutely?version=1&city="+ city +"&county="+ country +"&village="+ villege +"&appKey=8c36927b-2fbe-482e-8b7f-8faed2f7af35");    // 웹 에서 날씨 정보를 불러올 URL
+            var contents = web.DownloadString(@"https://api2.sktelecom.com/weather/current/minutely?version=1&city="+ cityValue +"&county="+ countryValue +"&village="+ villegeValue +"&appKey=8c36927b-2fbe-482e-8b7f-8faed2f7af35");    // 웹 에서 날씨 정보를 불러올 URL
 
             JObject job = JObject.Parse(contents);  // json파일 사용하기 위해 사용
 
@@ -30,22 +30,22 @@ namespace WinPhone
 
         public void City(string city)
         {
-            this.city = city;
+            this.cityValue = city;
         }
 
         public void Country(string country)
         {
-            this.country = country;
+            this.countryValue = country;
         }
 
-        public void Villege(string villege)
+        public void Villege(string villege)     // village 값을 변경 시킬 때 사용할 메서드
         {
-            this.villege = villege;
+            this.villegeValue = villege;
         }
 
         public string PrintCountry()
         {
-            return this.country;
+            return this.countryValue;
         }
     }
 }

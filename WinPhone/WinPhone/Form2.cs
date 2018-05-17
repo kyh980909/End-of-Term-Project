@@ -143,14 +143,27 @@ namespace WinPhone
 
         private void Select_Click(object sender, EventArgs e)
         {
-            ((Form1)(this.Owner)).Country.Text = celcius.country;    // Form1의 County 라벨의 접근제한자를 public으로 변경하여 사용
-            ((Form1)(this.Owner)).Celcius.Text = celcius.Celcius();  // Form1의 Celcius 라벨의 접근제한자를 public으로 변경하여 사용
+            bool check = true;
+            try
+            {
+                ((Form1)(this.Owner)).CelciusLabel.Text = celcius.Celcius();  // Form1의 CelciusLabel 라벨의 접근제한자를 public으로 변경하여 사용
+            }
+            catch (Exception)
+            {
+                check = false;
+                MessageBox.Show("다시 선택해주세요!");
+            }
+            if (check)  // 예외가 발생했을 때 값이 바뀌지 않음
+            {
+                ((Form1)(this.Owner)).CountryLabel.Text = celcius.countryValue;    // Form1의 CountryLabel 라벨의 접근제한자를 public으로 변경하여 사용
+                ((Form1)(this.Owner)).VillageLabel.Text = celcius.villegeValue;    // Form1의 VillageLabel 라벨의 접근제한자를 public으로 변경하여 사용
+            }
             this.Close();
         }
 
         private void SelectVillage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            celcius.Villege(SelectVillage.SelectedItem.ToString());
+            celcius.Villege(SelectVillage.SelectedItem.ToString()); // 선택된 구를 Celcius 클래스에 있는 Village메서드
         }
     }
 }

@@ -37,8 +37,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.Celcius = new System.Windows.Forms.Label();
-            this.Country = new System.Windows.Forms.Label();
+            this.CelciusLabel = new System.Windows.Forms.Label();
+            this.CountryLabel = new System.Windows.Forms.Label();
+            this.VillageLabel = new System.Windows.Forms.Label();
             this.StateBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,34 +119,45 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // Celcius
+            // CelciusLabel
             // 
-            this.Celcius.AutoSize = true;
-            this.Celcius.Font = new System.Drawing.Font("돋움", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Celcius.Location = new System.Drawing.Point(116, 117);
-            this.Celcius.Name = "Celcius";
-            this.Celcius.Size = new System.Drawing.Size(163, 67);
-            this.Celcius.TabIndex = 5;
-            this.Celcius.Text = "기온";
-            this.Celcius.Click += new System.EventHandler(this.Celcius_Click);
+            this.CelciusLabel.AutoSize = true;
+            this.CelciusLabel.Font = new System.Drawing.Font("돋움", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CelciusLabel.Location = new System.Drawing.Point(114, 131);
+            this.CelciusLabel.Name = "CelciusLabel";
+            this.CelciusLabel.Size = new System.Drawing.Size(163, 67);
+            this.CelciusLabel.TabIndex = 5;
+            this.CelciusLabel.Text = "기온";
+            this.CelciusLabel.Click += new System.EventHandler(this.Celcius_Click);
             // 
-            // Country
+            // CountryLabel
             // 
-            this.Country.AutoSize = true;
-            this.Country.Font = new System.Drawing.Font("돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Country.Location = new System.Drawing.Point(135, 202);
-            this.Country.Name = "Country";
-            this.Country.Size = new System.Drawing.Size(40, 16);
-            this.Country.TabIndex = 6;
-            this.Country.Text = "지역";
+            this.CountryLabel.AutoSize = true;
+            this.CountryLabel.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CountryLabel.Location = new System.Drawing.Point(132, 216);
+            this.CountryLabel.Name = "CountryLabel";
+            this.CountryLabel.Size = new System.Drawing.Size(28, 19);
+            this.CountryLabel.TabIndex = 6;
+            this.CountryLabel.Text = "구";
+            // 
+            // VillageLabel
+            // 
+            this.VillageLabel.AutoSize = true;
+            this.VillageLabel.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.VillageLabel.Location = new System.Drawing.Point(142, 237);
+            this.VillageLabel.Name = "VillageLabel";
+            this.VillageLabel.Size = new System.Drawing.Size(16, 11);
+            this.VillageLabel.TabIndex = 7;
+            this.VillageLabel.Text = "동";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(332, 513);
-            this.Controls.Add(this.Country);
-            this.Controls.Add(this.Celcius);
+            this.Controls.Add(this.VillageLabel);
+            this.Controls.Add(this.CountryLabel);
+            this.Controls.Add(this.CelciusLabel);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -171,8 +183,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Label Country;
-        public System.Windows.Forms.Label Celcius;
+        public System.Windows.Forms.Label CountryLabel;
+        public System.Windows.Forms.Label CelciusLabel;
+        public System.Windows.Forms.Label VillageLabel;
     }
 }
 
