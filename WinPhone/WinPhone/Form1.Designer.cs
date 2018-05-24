@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.StateBar = new System.Windows.Forms.GroupBox();
             this.Date = new System.Windows.Forms.Label();
             this.Time = new System.Windows.Forms.Label();
@@ -40,11 +41,14 @@
             this.CelciusLabel = new System.Windows.Forms.Label();
             this.CountryLabel = new System.Windows.Forms.Label();
             this.VillageLabel = new System.Windows.Forms.Label();
+            this.ShutDown = new System.Windows.Forms.PictureBox();
             this.StateBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShutDown)).BeginInit();
             this.SuspendLayout();
             // 
             // StateBar
             // 
+            this.StateBar.Controls.Add(this.ShutDown);
             this.StateBar.Controls.Add(this.Date);
             this.StateBar.Controls.Add(this.Time);
             this.StateBar.Location = new System.Drawing.Point(0, -6);
@@ -128,7 +132,7 @@
             this.CelciusLabel.Size = new System.Drawing.Size(163, 67);
             this.CelciusLabel.TabIndex = 5;
             this.CelciusLabel.Text = "기온";
-            this.CelciusLabel.Click += new System.EventHandler(this.Celcius_Click);
+            this.CelciusLabel.Click += new System.EventHandler(this.CelciusLabel_Click);
             // 
             // CountryLabel
             // 
@@ -150,11 +154,24 @@
             this.VillageLabel.TabIndex = 7;
             this.VillageLabel.Text = "동";
             // 
+            // ShutDown
+            // 
+            this.ShutDown.Image = ((System.Drawing.Image)(resources.GetObject("ShutDown.Image")));
+            this.ShutDown.InitialImage = ((System.Drawing.Image)(resources.GetObject("ShutDown.InitialImage")));
+            this.ShutDown.Location = new System.Drawing.Point(157, 11);
+            this.ShutDown.Name = "ShutDown";
+            this.ShutDown.Size = new System.Drawing.Size(17, 17);
+            this.ShutDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ShutDown.TabIndex = 2;
+            this.ShutDown.TabStop = false;
+            this.ShutDown.Click += new System.EventHandler(this.ShutDown_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(332, 513);
+            this.ControlBox = false;
             this.Controls.Add(this.VillageLabel);
             this.Controls.Add(this.CountryLabel);
             this.Controls.Add(this.CelciusLabel);
@@ -163,11 +180,13 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.StateBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.StateBar.ResumeLayout(false);
             this.StateBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShutDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +205,7 @@
         public System.Windows.Forms.Label CountryLabel;
         public System.Windows.Forms.Label CelciusLabel;
         public System.Windows.Forms.Label VillageLabel;
+        private System.Windows.Forms.PictureBox ShutDown;
     }
 }
 

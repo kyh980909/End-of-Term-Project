@@ -19,9 +19,9 @@ namespace WinPhone
             InitializeComponent();
             Date.Text = DateTime.Today.Year.ToString() + "년 " + DateTime.Today.Month.ToString() + "월 " + DateTime.Today.Day.ToString() + "일"; // Date라벨에 오늘 날짜를 표시
             Time.Text = DateTime.Now.ToShortTimeString();   // Time라벨에 현재 시간 표시
-            CelciusLabel.Text = celcius.Celcius();
-            CountryLabel.Text = celcius.countryValue;
-            VillageLabel.Text = celcius.villegeValue;
+            CelciusLabel.Text = celcius.Celcius();          // CelciusLabel라벨에 현재 온도 표시
+            CountryLabel.Text = celcius.countryValue;       // CountryLabel라벨에 선택한 구 표시
+            VillageLabel.Text = celcius.villegeValue;       // VillageLabel라벨에 선택한 동 표시
         }
 
         private void CurrentTimeTick(object sender, EventArgs e)
@@ -29,11 +29,16 @@ namespace WinPhone
             Time.Text = DateTime.Now.ToShortTimeString();   // 타이머가 1초마다 현재 시간을 업데이트 해줌
         }
 
-        private void Celcius_Click(object sender, EventArgs e)
+        private void CelciusLabel_Click(object sender, EventArgs e)     // CelciusLabel을 클릭 이벤트
         {
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2();    // Form2 클래스 생성
 
-            form2.ShowDialog(this);
+            form2.ShowDialog(this);       // Form2를 보여줌                  
+        }
+
+        private void ShutDown_Click(object sender, EventArgs e)     // 종료 버튼 이미지 클릭 이벤트
+        {
+            Application.Exit();                                     // 윈폼 종료 메서드
         }
     }
 }
