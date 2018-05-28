@@ -40,5 +40,12 @@ namespace WinPhone
         {
             Application.Exit();                                     // 윈폼 종료 메서드
         }
+
+        private void GameApp_Click(object sender, EventArgs e)
+        {
+            GameMenu gamemenu = new GameMenu();
+
+            gamemenu.ShowDialog(this);
+        }
     }
 }

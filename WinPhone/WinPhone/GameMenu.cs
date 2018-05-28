@@ -17,9 +17,14 @@ namespace WinPhone
             InitializeComponent();
         }
 
-        private void GameInfo_Click(object sender, EventArgs e)
+        private void GameInfo_Click(object sender, EventArgs e) // 게임정보 버튼 이벤트
         {
 
+        }
+
+        private void GameEnd_Click(object sender, EventArgs e) // 게임종료 버튼 이벤트
+        {
+            Close(); // 현재 폼을 닫는다.
         }
     }
 }
