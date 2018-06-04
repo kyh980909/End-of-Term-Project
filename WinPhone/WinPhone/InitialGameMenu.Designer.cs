@@ -1,6 +1,6 @@
 ﻿namespace WinPhone
 {
-    partial class GameMenu
+    partial class InitialGameMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -38,28 +38,27 @@
             // 
             this.GameName.AutoSize = true;
             this.GameName.Font = new System.Drawing.Font("돋움", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.GameName.Location = new System.Drawing.Point(289, 94);
+            this.GameName.Location = new System.Drawing.Point(42, 99);
             this.GameName.Name = "GameName";
-            this.GameName.Size = new System.Drawing.Size(431, 67);
+            this.GameName.Size = new System.Drawing.Size(235, 53);
             this.GameName.TabIndex = 0;
-            this.GameName.Text = "게임이름미정";
+            this.GameName.Text = "초성게임";
             // 
             // GameStart
             // 
-            this.GameStart.Location = new System.Drawing.Point(385, 268);
-            this.GameStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.GameStart.Location = new System.Drawing.Point(78, 228);
             this.GameStart.Name = "GameStart";
-            this.GameStart.Size = new System.Drawing.Size(195, 52);
+            this.GameStart.Size = new System.Drawing.Size(171, 42);
             this.GameStart.TabIndex = 1;
             this.GameStart.Text = "게임 시작";
             this.GameStart.UseVisualStyleBackColor = true;
+            this.GameStart.Click += new System.EventHandler(this.GameStart_Click);
             // 
             // GameInfo
             // 
-            this.GameInfo.Location = new System.Drawing.Point(385, 328);
-            this.GameInfo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.GameInfo.Location = new System.Drawing.Point(78, 276);
             this.GameInfo.Name = "GameInfo";
-            this.GameInfo.Size = new System.Drawing.Size(195, 51);
+            this.GameInfo.Size = new System.Drawing.Size(171, 41);
             this.GameInfo.TabIndex = 2;
             this.GameInfo.Text = "게임 설명";
             this.GameInfo.UseVisualStyleBackColor = true;
@@ -67,28 +66,26 @@
             // 
             // GameEnd
             // 
-            this.GameEnd.Location = new System.Drawing.Point(385, 386);
-            this.GameEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.GameEnd.Location = new System.Drawing.Point(78, 323);
             this.GameEnd.Name = "GameEnd";
-            this.GameEnd.Size = new System.Drawing.Size(195, 51);
+            this.GameEnd.Size = new System.Drawing.Size(171, 41);
             this.GameEnd.TabIndex = 3;
             this.GameEnd.Text = "게임 종료";
             this.GameEnd.UseVisualStyleBackColor = true;
             this.GameEnd.Click += new System.EventHandler(this.GameEnd_Click);
             // 
-            // GameMenu
+            // InitialGameMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 549);
+            this.ClientSize = new System.Drawing.Size(332, 513);
             this.ControlBox = false;
             this.Controls.Add(this.GameEnd);
             this.Controls.Add(this.GameInfo);
             this.Controls.Add(this.GameStart);
             this.Controls.Add(this.GameName);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "GameMenu";
-            this.Text = "GameMenu";
+            this.Name = "InitialGameMenu";
+            this.Text = "InitialGameMenu";
             this.ResumeLayout(false);
             this.PerformLayout();
 

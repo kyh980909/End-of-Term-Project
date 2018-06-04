@@ -33,7 +33,7 @@ namespace WinPhone
         {
             Form2 form2 = new Form2();    // Form2 클래스 생성
 
-            form2.ShowDialog(this);       // Form2를 보여줌                  
+            form2.ShowDialog();       // Form2를 보여줌                  
         }
 
         private void ShutDown_Click(object sender, EventArgs e)     // 종료 버튼 이미지 클릭 이벤트
@@ -41,11 +41,11 @@ namespace WinPhone
             Application.Exit();                                     // 윈폼 종료 메서드
         }
 
-        private void GameApp_Click(object sender, EventArgs e)
+        private void GameApp_Click(object sender, EventArgs e)      // GameApp 버튼 이벤트
         {
-            GameMenu gamemenu = new GameMenu();
-
-            gamemenu.ShowDialog(this);
+            Visible = false;        // 현재 폼 감추기
+            InitialGameMenu gamemenu = new InitialGameMenu();       // InitialGameMenu폼 클래스 생성
+            gamemenu.ShowDialog();      // InitialGameMenu폼 열기 
         }
     }
 }
