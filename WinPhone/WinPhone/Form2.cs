@@ -13,12 +13,14 @@ namespace WinPhone
 {
     public partial class Form2 : Form
     {
+        Form1 form1;
         GetCelcius celcius = new GetCelcius();
         ChangeVillage getVillage = new ChangeVillage(); //구 에 따른 동들 불러오는 클래스
 
-        public Form2()
+        public Form2(Form1 _form)
         {
             InitializeComponent();
+            form1 = _form;
         }
 
         private void SelectCountry_SelectedIndexChanged(object sender, EventArgs e)
@@ -146,7 +148,7 @@ namespace WinPhone
             bool check = true;
             try
             {
-                ((Form1)(this.Owner)).CelciusLabel.Text = celcius.Celcius();  // Form1의 CelciusLabel 라벨의 접근제한자를 public으로 변경하여 사용
+                form1.CelciusLabel.Text = celcius.Celcius();  // Form1의 CelciusLabel 라벨의 접근제한자를 public으로 변경하여 사용
             }
             catch (Exception)
             {
@@ -155,10 +157,10 @@ namespace WinPhone
             }
             if (check)  // 예외가 발생했을 때 값이 바뀌지 않음
             {
-                ((Form1)(this.Owner)).CountryLabel.Text = celcius.countryValue;    // Form1의 CountryLabel 라벨의 접근제한자를 public으로 변경하여 사용
-                ((Form1)(this.Owner)).VillageLabel.Text = celcius.villegeValue;    // Form1의 VillageLabel 라벨의 접근제한자를 public으로 변경하여 사용
+                form1.CountryLabel.Text = celcius.countryValue;    // Form1의 CountryLabel 라벨의 접근제한자를 public으로 변경하여 사용
+                form1.VillageLabel.Text = celcius.villegeValue;    // Form1의 VillageLabel 라벨의 접근제한자를 public으로 변경하여 사용
+                Close();
             }
-            this.Close();
         }
 
         private void SelectVillage_SelectedIndexChanged(object sender, EventArgs e)

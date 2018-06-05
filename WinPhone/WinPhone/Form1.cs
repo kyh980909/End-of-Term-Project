@@ -31,9 +31,9 @@ namespace WinPhone
 
         private void CelciusLabel_Click(object sender, EventArgs e)     // CelciusLabel을 클릭 이벤트
         {
-            Form2 form2 = new Form2();    // Form2 클래스 생성
+            Form2 form2 = new Form2(this);    // Form2 클래스 생성
 
-            form2.ShowDialog();       // Form2를 보여줌                  
+            form2.ShowDialog();               // Form2를 보여줌                  
         }
 
         private void ShutDown_Click(object sender, EventArgs e)     // 종료 버튼 이미지 클릭 이벤트
@@ -45,7 +45,7 @@ namespace WinPhone
         {
             Visible = false;        // 현재 폼 감추기
             InitialGameMenu gamemenu = new InitialGameMenu();       // InitialGameMenu폼 클래스 생성
-            gamemenu.ShowDialog();      // InitialGameMenu폼 열기 
+            gamemenu.ShowDialog();  // InitialGameMenu폼 열기 
         }
     }
 }

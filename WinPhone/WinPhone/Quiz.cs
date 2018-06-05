@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinPhone
 {
-    class Quiz1
+    class Quiz
     {
         public string[,] Question =   // 문제와 답 2차원 배열 생성
         {

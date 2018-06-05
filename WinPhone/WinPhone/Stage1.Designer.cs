@@ -34,13 +34,14 @@
             this.Input = new System.Windows.Forms.RichTextBox();
             this.Menu = new System.Windows.Forms.PictureBox();
             this.MenuPanel = new System.Windows.Forms.Panel();
-            this.MenuLabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.MenuLabel = new System.Windows.Forms.Label();
             this.Question = new System.Windows.Forms.Label();
             this.Hint = new System.Windows.Forms.GroupBox();
-            this.Hint1 = new System.Windows.Forms.Label();
             this.Hint2 = new System.Windows.Forms.Label();
+            this.Hint1 = new System.Windows.Forms.Label();
             this.Complete = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Menu)).BeginInit();
             this.MenuPanel.SuspendLayout();
             this.Hint.SuspendLayout();
@@ -60,9 +61,11 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(15, 46);
+            this.progressBar1.Maximum = 5;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(100, 23);
-            this.progressBar1.Step = 20;
+            this.progressBar1.Step = 1;
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 2;
             // 
             // Input
@@ -90,6 +93,7 @@
             // 
             this.MenuPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MenuPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MenuPanel.Controls.Add(this.BackButton);
             this.MenuPanel.Controls.Add(this.ExitButton);
             this.MenuPanel.Controls.Add(this.MenuLabel);
             this.MenuPanel.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -99,6 +103,16 @@
             this.MenuPanel.Size = new System.Drawing.Size(188, 233);
             this.MenuPanel.TabIndex = 5;
             this.MenuPanel.Visible = false;
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(33, 82);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(119, 34);
+            this.ExitButton.TabIndex = 1;
+            this.ExitButton.Text = "나가기";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // MenuLabel
             // 
@@ -110,21 +124,11 @@
             this.MenuLabel.TabIndex = 0;
             this.MenuLabel.Text = "메뉴";
             // 
-            // ExitButton
-            // 
-            this.ExitButton.Location = new System.Drawing.Point(34, 113);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(119, 34);
-            this.ExitButton.TabIndex = 1;
-            this.ExitButton.Text = "나가기";
-            this.ExitButton.UseVisualStyleBackColor = true;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
-            // 
             // Question
             // 
             this.Question.AutoSize = true;
             this.Question.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Question.Location = new System.Drawing.Point(122, 201);
+            this.Question.Location = new System.Drawing.Point(116, 200);
             this.Question.Name = "Question";
             this.Question.Size = new System.Drawing.Size(63, 32);
             this.Question.TabIndex = 6;
@@ -141,16 +145,6 @@
             this.Hint.TabStop = false;
             this.Hint.Text = "도움말";
             // 
-            // Hint1
-            // 
-            this.Hint1.AutoSize = true;
-            this.Hint1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Hint1.Location = new System.Drawing.Point(28, 66);
-            this.Hint1.Name = "Hint1";
-            this.Hint1.Size = new System.Drawing.Size(51, 21);
-            this.Hint1.TabIndex = 0;
-            this.Hint1.Text = "힌트1";
-            // 
             // Hint2
             // 
             this.Hint2.AutoSize = true;
@@ -160,6 +154,16 @@
             this.Hint2.Size = new System.Drawing.Size(51, 21);
             this.Hint2.TabIndex = 1;
             this.Hint2.Text = "힌트2";
+            // 
+            // Hint1
+            // 
+            this.Hint1.AutoSize = true;
+            this.Hint1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Hint1.Location = new System.Drawing.Point(28, 66);
+            this.Hint1.Name = "Hint1";
+            this.Hint1.Size = new System.Drawing.Size(51, 21);
+            this.Hint1.TabIndex = 0;
+            this.Hint1.Text = "힌트1";
             // 
             // Complete
             // 
@@ -171,6 +175,16 @@
             this.Complete.Text = "확인";
             this.Complete.UseVisualStyleBackColor = true;
             this.Complete.Click += new System.EventHandler(this.Complete_Click);
+            // 
+            // BackButton
+            // 
+            this.BackButton.Location = new System.Drawing.Point(33, 153);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(119, 34);
+            this.BackButton.TabIndex = 2;
+            this.BackButton.Text = "뒤로가기";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // Stage1
             // 
@@ -213,5 +227,6 @@
         private System.Windows.Forms.Label Hint2;
         private System.Windows.Forms.Label Hint1;
         private System.Windows.Forms.Button Complete;
+        private System.Windows.Forms.Button BackButton;
     }
 }

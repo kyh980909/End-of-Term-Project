@@ -12,7 +12,7 @@ namespace WinPhone
     {
         public string cityValue = "서울";
         public string countryValue = "노원구";
-        public string villegeValue = "상계동";
+        public string villegeValue = "상계6.7동";
 
 
         public string Celcius()
