@@ -30,5 +30,12 @@ namespace WinPhone
             Stage1 stage1 = new Stage1();                       // Stage1폼 클래스 생성
             stage1.ShowDialog();                                // Stage1폼 열기
         }
+
+        private void Stage2_Click(object sender, EventArgs e)   // Stage2 버튼 이벤트
+        {
+            Visible = false;                                    // 현재 폼 감추기
+            Stage2 stage2 = new Stage2();                       // Stage2폼 클래스 생성
+            stage2.ShowDialog();                                // Stage2폼 열기
+        }
     }
 }

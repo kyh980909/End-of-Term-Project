@@ -56,6 +56,7 @@
             this.Stage2.TabIndex = 1;
             this.Stage2.Text = "유망주 단계";
             this.Stage2.UseVisualStyleBackColor = true;
+            this.Stage2.Click += new System.EventHandler(this.Stage2_Click);
             // 
             // Stage3
             // 

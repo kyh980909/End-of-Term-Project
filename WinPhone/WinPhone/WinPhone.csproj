@@ -85,6 +85,12 @@
     <Compile Include="Stage1.Designer.cs">
       <DependentUpon>Stage1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage2.Designer.cs">
+      <DependentUpon>Stage2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +114,9 @@
     </Compile>
     <EmbeddedResource Include="Stage1.resx">
       <DependentUpon>Stage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage2.resx">
+      <DependentUpon>Stage2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
