@@ -10,52 +10,52 @@ using System.Windows.Forms;
 
 namespace WinPhone
 {
-    public partial class Stage2 : Form
+    public partial class Stage3 : Form
     {
         int num = 0;
         Quiz quiz = new Quiz();
-        public Stage2()
+        public Stage3()
         {
             InitializeComponent();
 
-            Question.Text = quiz.Question2[num, 0];
-            Hint1.Text = quiz.Hint2[num, 0];
-            Hint2.Text = quiz.Hint2[num, 1];
+            Question.Text = quiz.Question3[num, 0];
+            Hint1.Text = quiz.Hint3[num, 0];
+            Hint2.Text = quiz.Hint3[num, 1];
             Input.SelectionAlignment = HorizontalAlignment.Center;  // RichTextBox 가운데 정렬
         }
 
         private void Menu_Click(object sender, EventArgs e)
         {
             MenuPanel.Visible = true;                             // MenuPanel을 보여줌
-            Complete.Enabled = false;                             // Complete버튼 비활성화
+            Complete.Enabled = false;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Close();                                              // 현재 폼 닫기
             InitialGameSelect select = new InitialGameSelect();   // InitialGameSelect폼 생성
-            select.Visible = true;                                // InitialGameSelect 보여줌           
+            select.Visible = true;
         }
 
         private void BackButton_Click(object sender, EventArgs e)
         {
             MenuPanel.Visible = false;
-            Complete.Enabled = true;                              // Complete버튼 활성화
+            Complete.Enabled = true;
         }
 
         private void Complete_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (quiz.Question2[num, 1] == Input.Text)        // 문제와 입력받을 값을 비교
+             try
+             {
+                if (quiz.Question3[num, 1] == Input.Text)        // 문제와 입력받을 값을 비교
                 {
                     num++;                                      // 문제 정답을 맞췄을 때 문제 번호 1 증가
                     MessageBox.Show("정답입니다!!");
                     if (num < 5)
                     {
-                        Question.Text = quiz.Question2[num, 0]; // 다음 문제로 넘어가기
-                        Hint1.Text = quiz.Hint2[num, 0];        // 다음 힌트로 넘어가기
-                        Hint2.Text = quiz.Hint2[num, 1];        // 다음 힌트로 넘어가기
+                        Question.Text = quiz.Question3[num, 0]; // 다음 문제로 넘어가기
+                        Hint1.Text = quiz.Hint3[num, 0];        // 다음 힌트로 넘어가기
+                        Hint2.Text = quiz.Hint3[num, 1];        // 다음 힌트로 넘어가기
                         Input.Clear();                          // 텍스트 박스 초기화
                         progressBar1.PerformStep();             // progressBar1 한칸 채우기       
                     }

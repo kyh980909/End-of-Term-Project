@@ -52,7 +52,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("돋움체", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(12, 26);
+            this.label1.Location = new System.Drawing.Point(14, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 16);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(15, 46);
+            this.progressBar1.Location = new System.Drawing.Point(17, 44);
             this.progressBar1.Maximum = 5;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(100, 23);
@@ -71,7 +71,7 @@
             // Input
             // 
             this.Input.Font = new System.Drawing.Font("돋움체", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Input.Location = new System.Drawing.Point(70, 120);
+            this.Input.Location = new System.Drawing.Point(72, 118);
             this.Input.Multiline = false;
             this.Input.Name = "Input";
             this.Input.Size = new System.Drawing.Size(188, 52);
@@ -81,7 +81,7 @@
             // Menu
             // 
             this.Menu.Image = ((System.Drawing.Image)(resources.GetObject("Menu.Image")));
-            this.Menu.Location = new System.Drawing.Point(301, 5);
+            this.Menu.Location = new System.Drawing.Point(303, 3);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(25, 25);
             this.Menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,7 +97,7 @@
             this.MenuPanel.Controls.Add(this.ExitButton);
             this.MenuPanel.Controls.Add(this.MenuLabel);
             this.MenuPanel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.MenuPanel.Location = new System.Drawing.Point(70, 132);
+            this.MenuPanel.Location = new System.Drawing.Point(72, 130);
             this.MenuPanel.Margin = new System.Windows.Forms.Padding(10);
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(188, 233);
@@ -106,7 +106,7 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(33, 153);
+            this.BackButton.Location = new System.Drawing.Point(35, 151);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(119, 34);
             this.BackButton.TabIndex = 2;
@@ -116,7 +116,7 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(33, 82);
+            this.ExitButton.Location = new System.Drawing.Point(35, 80);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(119, 34);
             this.ExitButton.TabIndex = 1;
@@ -128,7 +128,7 @@
             // 
             this.MenuLabel.AutoSize = true;
             this.MenuLabel.Font = new System.Drawing.Font("돋움", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.MenuLabel.Location = new System.Drawing.Point(64, 19);
+            this.MenuLabel.Location = new System.Drawing.Point(66, 17);
             this.MenuLabel.Name = "MenuLabel";
             this.MenuLabel.Size = new System.Drawing.Size(60, 24);
             this.MenuLabel.TabIndex = 0;
@@ -138,7 +138,7 @@
             // 
             this.Question.AutoSize = true;
             this.Question.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Question.Location = new System.Drawing.Point(116, 200);
+            this.Question.Location = new System.Drawing.Point(118, 198);
             this.Question.Name = "Question";
             this.Question.Size = new System.Drawing.Size(63, 32);
             this.Question.TabIndex = 6;
@@ -148,7 +148,7 @@
             // 
             this.Hint.Controls.Add(this.Hint2);
             this.Hint.Controls.Add(this.Hint1);
-            this.Hint.Location = new System.Drawing.Point(47, 273);
+            this.Hint.Location = new System.Drawing.Point(49, 271);
             this.Hint.Name = "Hint";
             this.Hint.Size = new System.Drawing.Size(233, 153);
             this.Hint.TabIndex = 7;
@@ -159,7 +159,7 @@
             // 
             this.Hint2.AutoSize = true;
             this.Hint2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Hint2.Location = new System.Drawing.Point(157, 66);
+            this.Hint2.Location = new System.Drawing.Point(159, 64);
             this.Hint2.Name = "Hint2";
             this.Hint2.Size = new System.Drawing.Size(51, 21);
             this.Hint2.TabIndex = 1;
@@ -169,7 +169,7 @@
             // 
             this.Hint1.AutoSize = true;
             this.Hint1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Hint1.Location = new System.Drawing.Point(28, 66);
+            this.Hint1.Location = new System.Drawing.Point(30, 64);
             this.Hint1.Name = "Hint1";
             this.Hint1.Size = new System.Drawing.Size(51, 21);
             this.Hint1.TabIndex = 0;
@@ -178,7 +178,7 @@
             // Complete
             // 
             this.Complete.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Complete.Location = new System.Drawing.Point(104, 454);
+            this.Complete.Location = new System.Drawing.Point(106, 452);
             this.Complete.Name = "Complete";
             this.Complete.Size = new System.Drawing.Size(111, 38);
             this.Complete.TabIndex = 8;
@@ -202,7 +202,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Stage1";
-            this.Text = "Stage1";
+            this.Text = "초보자 단계";
             ((System.ComponentModel.ISupportInitialize)(this.Menu)).EndInit();
             this.MenuPanel.ResumeLayout(false);
             this.MenuPanel.PerformLayout();

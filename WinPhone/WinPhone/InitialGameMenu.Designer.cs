@@ -30,7 +30,6 @@
         {
             this.GameName = new System.Windows.Forms.Label();
             this.GameStart = new System.Windows.Forms.Button();
-            this.GameInfo = new System.Windows.Forms.Button();
             this.GameEnd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -54,16 +53,6 @@
             this.GameStart.UseVisualStyleBackColor = true;
             this.GameStart.Click += new System.EventHandler(this.GameStart_Click);
             // 
-            // GameInfo
-            // 
-            this.GameInfo.Location = new System.Drawing.Point(78, 276);
-            this.GameInfo.Name = "GameInfo";
-            this.GameInfo.Size = new System.Drawing.Size(171, 41);
-            this.GameInfo.TabIndex = 2;
-            this.GameInfo.Text = "게임 설명";
-            this.GameInfo.UseVisualStyleBackColor = true;
-            this.GameInfo.Click += new System.EventHandler(this.GameInfo_Click);
-            // 
             // GameEnd
             // 
             this.GameEnd.Location = new System.Drawing.Point(78, 323);
@@ -81,7 +70,6 @@
             this.ClientSize = new System.Drawing.Size(332, 513);
             this.ControlBox = false;
             this.Controls.Add(this.GameEnd);
-            this.Controls.Add(this.GameInfo);
             this.Controls.Add(this.GameStart);
             this.Controls.Add(this.GameName);
             this.Name = "InitialGameMenu";
@@ -95,7 +83,6 @@
 
         private System.Windows.Forms.Label GameName;
         private System.Windows.Forms.Button GameStart;
-        private System.Windows.Forms.Button GameInfo;
         private System.Windows.Forms.Button GameEnd;
     }
 }

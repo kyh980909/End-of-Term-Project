@@ -79,6 +79,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quiz.cs" />
+    <Compile Include="SendMailcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMailcs.Designer.cs">
+      <DependentUpon>SendMailcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Stage1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,24 @@
     </Compile>
     <Compile Include="Stage2.Designer.cs">
       <DependentUpon>Stage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage3.Designer.cs">
+      <DependentUpon>Stage3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage4.Designer.cs">
+      <DependentUpon>Stage4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage5.Designer.cs">
+      <DependentUpon>Stage5.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -112,11 +136,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SendMailcs.resx">
+      <DependentUpon>SendMailcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stage1.resx">
       <DependentUpon>Stage1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stage2.resx">
       <DependentUpon>Stage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage3.resx">
+      <DependentUpon>Stage3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage4.resx">
+      <DependentUpon>Stage4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage5.resx">
+      <DependentUpon>Stage5.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -66,6 +66,7 @@
             this.Stage3.TabIndex = 2;
             this.Stage3.Text = "중급자 단계";
             this.Stage3.UseVisualStyleBackColor = true;
+            this.Stage3.Click += new System.EventHandler(this.Stage3_Click);
             // 
             // Stage4
             // 
@@ -75,6 +76,7 @@
             this.Stage4.TabIndex = 3;
             this.Stage4.Text = "실력자 단계";
             this.Stage4.UseVisualStyleBackColor = true;
+            this.Stage4.Click += new System.EventHandler(this.Stage4_Click);
             // 
             // Stage5
             // 
@@ -84,6 +86,7 @@
             this.Stage5.TabIndex = 4;
             this.Stage5.Text = "우수자 단계";
             this.Stage5.UseVisualStyleBackColor = true;
+            this.Stage5.Click += new System.EventHandler(this.Stage5_Click);
             // 
             // Back
             // 
@@ -101,6 +104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(332, 513);
+            this.ControlBox = false;
             this.Controls.Add(this.Back);
             this.Controls.Add(this.Stage5);
             this.Controls.Add(this.Stage4);

@@ -26,7 +26,7 @@ namespace WinPhone
 
         private void CurrentTimeTick(object sender, EventArgs e)
         {
-            Time.Text = DateTime.Now.ToShortTimeString();   // 타이머가 1초마다 현재 시간을 업데이트 해줌
+            Time.Text = DateTime.Now.ToShortTimeString();   // 타이머가 30초마다 현재 시간을 업데이트 해줌
         }
 
         private void CelciusLabel_Click(object sender, EventArgs e)     // CelciusLabel을 클릭 이벤트

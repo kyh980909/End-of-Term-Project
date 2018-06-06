@@ -36,12 +36,12 @@
             this.Time = new System.Windows.Forms.Label();
             this.CurrentTime = new System.Windows.Forms.Timer(this.components);
             this.GameApp = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.CelciusLabel = new System.Windows.Forms.Label();
             this.CountryLabel = new System.Windows.Forms.Label();
             this.VillageLabel = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.StateBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShutDown)).BeginInit();
             this.SuspendLayout();
@@ -106,6 +106,37 @@
             this.GameApp.UseVisualStyleBackColor = true;
             this.GameApp.Click += new System.EventHandler(this.GameApp_Click);
             // 
+            // CelciusLabel
+            // 
+            this.CelciusLabel.AutoSize = true;
+            this.CelciusLabel.Font = new System.Drawing.Font("돋움", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CelciusLabel.Location = new System.Drawing.Point(114, 131);
+            this.CelciusLabel.Name = "CelciusLabel";
+            this.CelciusLabel.Size = new System.Drawing.Size(163, 67);
+            this.CelciusLabel.TabIndex = 5;
+            this.CelciusLabel.Text = "기온";
+            this.CelciusLabel.Click += new System.EventHandler(this.CelciusLabel_Click);
+            // 
+            // CountryLabel
+            // 
+            this.CountryLabel.AutoSize = true;
+            this.CountryLabel.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CountryLabel.Location = new System.Drawing.Point(136, 216);
+            this.CountryLabel.Name = "CountryLabel";
+            this.CountryLabel.Size = new System.Drawing.Size(28, 19);
+            this.CountryLabel.TabIndex = 6;
+            this.CountryLabel.Text = "구";
+            // 
+            // VillageLabel
+            // 
+            this.VillageLabel.AutoSize = true;
+            this.VillageLabel.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.VillageLabel.Location = new System.Drawing.Point(146, 237);
+            this.VillageLabel.Name = "VillageLabel";
+            this.VillageLabel.Size = new System.Drawing.Size(16, 11);
+            this.VillageLabel.TabIndex = 7;
+            this.VillageLabel.Text = "동";
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(90, 437);
@@ -113,7 +144,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(65, 65);
             this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
+            this.button2.Text = "메일";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -135,37 +166,6 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // CelciusLabel
-            // 
-            this.CelciusLabel.AutoSize = true;
-            this.CelciusLabel.Font = new System.Drawing.Font("돋움", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CelciusLabel.Location = new System.Drawing.Point(114, 131);
-            this.CelciusLabel.Name = "CelciusLabel";
-            this.CelciusLabel.Size = new System.Drawing.Size(163, 67);
-            this.CelciusLabel.TabIndex = 5;
-            this.CelciusLabel.Text = "기온";
-            this.CelciusLabel.Click += new System.EventHandler(this.CelciusLabel_Click);
-            // 
-            // CountryLabel
-            // 
-            this.CountryLabel.AutoSize = true;
-            this.CountryLabel.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CountryLabel.Location = new System.Drawing.Point(132, 216);
-            this.CountryLabel.Name = "CountryLabel";
-            this.CountryLabel.Size = new System.Drawing.Size(28, 19);
-            this.CountryLabel.TabIndex = 6;
-            this.CountryLabel.Text = "구";
-            // 
-            // VillageLabel
-            // 
-            this.VillageLabel.AutoSize = true;
-            this.VillageLabel.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.VillageLabel.Location = new System.Drawing.Point(142, 237);
-            this.VillageLabel.Name = "VillageLabel";
-            this.VillageLabel.Size = new System.Drawing.Size(16, 11);
-            this.VillageLabel.TabIndex = 7;
-            this.VillageLabel.Text = "동";
             // 
             // Form1
             // 
@@ -200,13 +200,13 @@
         private System.Windows.Forms.Timer CurrentTime;
         private System.Windows.Forms.Label Date;
         private System.Windows.Forms.Button GameApp;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         public System.Windows.Forms.Label CountryLabel;
         public System.Windows.Forms.Label CelciusLabel;
         public System.Windows.Forms.Label VillageLabel;
         private System.Windows.Forms.PictureBox ShutDown;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 
