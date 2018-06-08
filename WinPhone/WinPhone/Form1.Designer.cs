@@ -41,7 +41,7 @@
             this.VillageLabel = new System.Windows.Forms.Label();
             this.MailApp = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.RT_KeyWord = new System.Windows.Forms.Button();
             this.StateBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShutDown)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +97,7 @@
             // 
             // GameApp
             // 
+            this.GameApp.Font = new System.Drawing.Font("HY견고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.GameApp.Location = new System.Drawing.Point(8, 436);
             this.GameApp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GameApp.Name = "GameApp";
@@ -139,6 +140,7 @@
             // 
             // MailApp
             // 
+            this.MailApp.Font = new System.Drawing.Font("HY견고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.MailApp.Location = new System.Drawing.Point(90, 437);
             this.MailApp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MailApp.Name = "MailApp";
@@ -150,6 +152,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("HY견고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button4.Location = new System.Drawing.Point(255, 437);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
@@ -158,15 +161,17 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // RT_KeyWord
             // 
-            this.button3.Location = new System.Drawing.Point(172, 436);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 65);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.RT_KeyWord.Font = new System.Drawing.Font("HY견고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.RT_KeyWord.Location = new System.Drawing.Point(172, 436);
+            this.RT_KeyWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RT_KeyWord.Name = "RT_KeyWord";
+            this.RT_KeyWord.Size = new System.Drawing.Size(65, 65);
+            this.RT_KeyWord.TabIndex = 3;
+            this.RT_KeyWord.Text = "실시간 검색어";
+            this.RT_KeyWord.UseVisualStyleBackColor = true;
+            this.RT_KeyWord.Click += new System.EventHandler(this.RT_KeyWord_Click);
             // 
             // Form1
             // 
@@ -178,7 +183,7 @@
             this.Controls.Add(this.CountryLabel);
             this.Controls.Add(this.CelciusLabel);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.RT_KeyWord);
             this.Controls.Add(this.MailApp);
             this.Controls.Add(this.GameApp);
             this.Controls.Add(this.StateBar);
@@ -207,7 +212,7 @@
         private System.Windows.Forms.PictureBox ShutDown;
         private System.Windows.Forms.Button MailApp;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button RT_KeyWord;
     }
 }
 

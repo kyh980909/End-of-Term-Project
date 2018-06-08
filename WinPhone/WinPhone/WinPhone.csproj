@@ -79,6 +79,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quiz.cs" />
+    <Compile Include="RealTimeKeyWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RealTimeKeyWord.Designer.cs">
+      <DependentUpon>RealTimeKeyWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="SendMail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RealTimeKeyWord.resx">
+      <DependentUpon>RealTimeKeyWord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SendMail.resx">
       <DependentUpon>SendMail.cs</DependentUpon>
     </EmbeddedResource>

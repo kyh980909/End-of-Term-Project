@@ -54,5 +54,12 @@ namespace WinPhone
             SendMail mail = new SendMail();       // SendMail폼 클래스 생성
             mail.ShowDialog();  // SendMail폼 열기 
         }
+
+        private void RT_KeyWord_Click(object sender, EventArgs e)
+        {
+            Visible = false;        // 현재 폼 감추기
+            RealTimeKeyWord rt_form = new RealTimeKeyWord();       // RealTimeKeyWord폼 클래스 생성
+            rt_form.ShowDialog();  // RealTimeKeyWord폼 열기 
+        }
     }
 }
