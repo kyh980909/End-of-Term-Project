@@ -19,7 +19,7 @@ namespace WinPhone
         WebClient web = new WebClient();
 
         Stream stream_source;
-        public string Keyword()
+        public string[] Keyword()
         {
             stream_source = web.OpenRead("https://www.naver.com/");
             StreamReader sr = new StreamReader(stream_source, utf);
@@ -39,11 +39,10 @@ namespace WinPhone
             for (int k = 0; k< 20; k++)
             {
                 int cut1 = str[k].LastIndexOf("<") - 1;
-        int cut2 = str[k].IndexOf(">") + 1;
-        str[k] = str[k].Substring(cut2, cut1 - cut2 + 1);
-        Console.WriteLine(k+1 + "." + str[k]);
+                int cut2 = str[k].IndexOf(">") + 1;
+                str[k] = str[k].Substring(cut2, cut1 - cut2 + 1);
             }
-            return ;
+            return str;
         }
 
     }
