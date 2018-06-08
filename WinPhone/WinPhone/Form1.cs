@@ -47,5 +47,12 @@ namespace WinPhone
             InitialGameMenu gamemenu = new InitialGameMenu();       // InitialGameMenu폼 클래스 생성
             gamemenu.ShowDialog();  // InitialGameMenu폼 열기 
         }
+
+        private void MailApp_Click(object sender, EventArgs e)
+        {
+            Visible = false;        // 현재 폼 감추기
+            SendMail mail = new SendMail();       // SendMail폼 클래스 생성
+            mail.ShowDialog();  // SendMail폼 열기 
+        }
     }
 }

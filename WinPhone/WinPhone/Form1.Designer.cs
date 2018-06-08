@@ -39,9 +39,9 @@
             this.CelciusLabel = new System.Windows.Forms.Label();
             this.CountryLabel = new System.Windows.Forms.Label();
             this.VillageLabel = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.MailApp = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.StateBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShutDown)).BeginInit();
             this.SuspendLayout();
@@ -137,25 +137,16 @@
             this.VillageLabel.TabIndex = 7;
             this.VillageLabel.Text = "동";
             // 
-            // button2
+            // MailApp
             // 
-            this.button2.Location = new System.Drawing.Point(90, 437);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 65);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "메일";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(172, 436);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 65);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.MailApp.Location = new System.Drawing.Point(90, 437);
+            this.MailApp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MailApp.Name = "MailApp";
+            this.MailApp.Size = new System.Drawing.Size(65, 65);
+            this.MailApp.TabIndex = 2;
+            this.MailApp.Text = "메일";
+            this.MailApp.UseVisualStyleBackColor = true;
+            this.MailApp.Click += new System.EventHandler(this.MailApp_Click);
             // 
             // button4
             // 
@@ -166,6 +157,16 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(172, 436);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(65, 65);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -178,7 +179,7 @@
             this.Controls.Add(this.CelciusLabel);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.MailApp);
             this.Controls.Add(this.GameApp);
             this.Controls.Add(this.StateBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -204,9 +205,9 @@
         public System.Windows.Forms.Label CelciusLabel;
         public System.Windows.Forms.Label VillageLabel;
         private System.Windows.Forms.PictureBox ShutDown;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button MailApp;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
 

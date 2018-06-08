@@ -117,6 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(247, 202);
+            this.ControlBox = false;
             this.Controls.Add(this.Select);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.SelectVillage);
