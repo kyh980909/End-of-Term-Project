@@ -27,7 +27,6 @@ namespace WinPhone
                 client.EnableSsl = true; // SSL 사용 설정
                 client.DeliveryMethod = SmtpDeliveryMethod.Network; // 전자메일 지정
                 client.Credentials = new System.Net.NetworkCredential(Mail_ID.Text, Mail_PW.Text);      //보내는 사람의 계정을 알아야 보내니깐 인증하는코드
-                //MessageBox.Show("잘못된 아이디와 비밀번호 입니다.");
                 try
                 {
                     MailAddress from = new MailAddress(Mail_ID.Text + "@gmail.com", Sender_Name.Text);  //보내는사람,이름
