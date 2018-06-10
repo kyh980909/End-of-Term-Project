@@ -40,7 +40,6 @@
             this.CountryLabel = new System.Windows.Forms.Label();
             this.VillageLabel = new System.Windows.Forms.Label();
             this.MailApp = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.RT_KeyWord = new System.Windows.Forms.Button();
             this.StateBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShutDown)).BeginInit();
@@ -51,11 +50,11 @@
             this.StateBar.Controls.Add(this.ShutDown);
             this.StateBar.Controls.Add(this.Date);
             this.StateBar.Controls.Add(this.Time);
-            this.StateBar.Location = new System.Drawing.Point(0, -6);
+            this.StateBar.Location = new System.Drawing.Point(0, -8);
             this.StateBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StateBar.Name = "StateBar";
             this.StateBar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.StateBar.Size = new System.Drawing.Size(332, 33);
+            this.StateBar.Size = new System.Drawing.Size(379, 41);
             this.StateBar.TabIndex = 0;
             this.StateBar.TabStop = false;
             // 
@@ -63,9 +62,10 @@
             // 
             this.ShutDown.Image = ((System.Drawing.Image)(resources.GetObject("ShutDown.Image")));
             this.ShutDown.InitialImage = ((System.Drawing.Image)(resources.GetObject("ShutDown.InitialImage")));
-            this.ShutDown.Location = new System.Drawing.Point(157, 11);
+            this.ShutDown.Location = new System.Drawing.Point(179, 14);
+            this.ShutDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ShutDown.Name = "ShutDown";
-            this.ShutDown.Size = new System.Drawing.Size(17, 17);
+            this.ShutDown.Size = new System.Drawing.Size(19, 21);
             this.ShutDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ShutDown.TabIndex = 2;
             this.ShutDown.TabStop = false;
@@ -74,18 +74,18 @@
             // Date
             // 
             this.Date.AutoSize = true;
-            this.Date.Location = new System.Drawing.Point(5, 14);
+            this.Date.Location = new System.Drawing.Point(6, 18);
             this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(29, 12);
+            this.Date.Size = new System.Drawing.Size(37, 15);
             this.Date.TabIndex = 1;
             this.Date.Text = "날짜";
             // 
             // Time
             // 
             this.Time.AutoSize = true;
-            this.Time.Location = new System.Drawing.Point(270, 14);
+            this.Time.Location = new System.Drawing.Point(309, 18);
             this.Time.Name = "Time";
-            this.Time.Size = new System.Drawing.Size(53, 12);
+            this.Time.Size = new System.Drawing.Size(67, 15);
             this.Time.TabIndex = 0;
             this.Time.Text = "현재시간";
             // 
@@ -98,10 +98,10 @@
             // GameApp
             // 
             this.GameApp.Font = new System.Drawing.Font("HY견고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.GameApp.Location = new System.Drawing.Point(8, 436);
+            this.GameApp.Location = new System.Drawing.Point(12, 530);
             this.GameApp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GameApp.Name = "GameApp";
-            this.GameApp.Size = new System.Drawing.Size(65, 65);
+            this.GameApp.Size = new System.Drawing.Size(100, 100);
             this.GameApp.TabIndex = 1;
             this.GameApp.Text = "게임";
             this.GameApp.UseVisualStyleBackColor = true;
@@ -111,9 +111,9 @@
             // 
             this.CelciusLabel.AutoSize = true;
             this.CelciusLabel.Font = new System.Drawing.Font("돋움", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CelciusLabel.Location = new System.Drawing.Point(114, 131);
+            this.CelciusLabel.Location = new System.Drawing.Point(130, 164);
             this.CelciusLabel.Name = "CelciusLabel";
-            this.CelciusLabel.Size = new System.Drawing.Size(163, 67);
+            this.CelciusLabel.Size = new System.Drawing.Size(203, 84);
             this.CelciusLabel.TabIndex = 5;
             this.CelciusLabel.Text = "기온";
             this.CelciusLabel.Click += new System.EventHandler(this.CelciusLabel_Click);
@@ -122,9 +122,9 @@
             // 
             this.CountryLabel.AutoSize = true;
             this.CountryLabel.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CountryLabel.Location = new System.Drawing.Point(136, 216);
+            this.CountryLabel.Location = new System.Drawing.Point(155, 270);
             this.CountryLabel.Name = "CountryLabel";
-            this.CountryLabel.Size = new System.Drawing.Size(28, 19);
+            this.CountryLabel.Size = new System.Drawing.Size(34, 24);
             this.CountryLabel.TabIndex = 6;
             this.CountryLabel.Text = "구";
             // 
@@ -132,42 +132,31 @@
             // 
             this.VillageLabel.AutoSize = true;
             this.VillageLabel.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.VillageLabel.Location = new System.Drawing.Point(146, 237);
+            this.VillageLabel.Location = new System.Drawing.Point(167, 296);
             this.VillageLabel.Name = "VillageLabel";
-            this.VillageLabel.Size = new System.Drawing.Size(16, 11);
+            this.VillageLabel.Size = new System.Drawing.Size(21, 14);
             this.VillageLabel.TabIndex = 7;
             this.VillageLabel.Text = "동";
             // 
             // MailApp
             // 
             this.MailApp.Font = new System.Drawing.Font("HY견고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.MailApp.Location = new System.Drawing.Point(90, 437);
+            this.MailApp.Location = new System.Drawing.Point(142, 530);
             this.MailApp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MailApp.Name = "MailApp";
-            this.MailApp.Size = new System.Drawing.Size(65, 65);
+            this.MailApp.Size = new System.Drawing.Size(100, 100);
             this.MailApp.TabIndex = 2;
             this.MailApp.Text = "메일";
             this.MailApp.UseVisualStyleBackColor = true;
             this.MailApp.Click += new System.EventHandler(this.MailApp_Click);
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("HY견고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button4.Location = new System.Drawing.Point(255, 436);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(65, 65);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // RT_KeyWord
             // 
             this.RT_KeyWord.Font = new System.Drawing.Font("HY견고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RT_KeyWord.Location = new System.Drawing.Point(172, 436);
+            this.RT_KeyWord.Location = new System.Drawing.Point(267, 530);
             this.RT_KeyWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RT_KeyWord.Name = "RT_KeyWord";
-            this.RT_KeyWord.Size = new System.Drawing.Size(65, 65);
+            this.RT_KeyWord.Size = new System.Drawing.Size(100, 100);
             this.RT_KeyWord.TabIndex = 3;
             this.RT_KeyWord.Text = "실시간 검색어";
             this.RT_KeyWord.UseVisualStyleBackColor = true;
@@ -175,14 +164,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 513);
+            this.ClientSize = new System.Drawing.Size(379, 641);
             this.ControlBox = false;
             this.Controls.Add(this.VillageLabel);
             this.Controls.Add(this.CountryLabel);
             this.Controls.Add(this.CelciusLabel);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.RT_KeyWord);
             this.Controls.Add(this.MailApp);
             this.Controls.Add(this.GameApp);
@@ -211,7 +199,6 @@
         public System.Windows.Forms.Label VillageLabel;
         private System.Windows.Forms.PictureBox ShutDown;
         private System.Windows.Forms.Button MailApp;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button RT_KeyWord;
     }
 }

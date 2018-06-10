@@ -26,11 +26,11 @@ namespace WinPhone
                 client.UseDefaultCredentials = false;
                 client.EnableSsl = true; // SSL 사용 설정
                 client.DeliveryMethod = SmtpDeliveryMethod.Network; // 전자메일 지정
-                client.Credentials = new System.Net.NetworkCredential(Mail_ID.Text, Mail_PW.Text);    //보내는 사람의 계정을 알아야 보내니깐 인증하는코드
+                client.Credentials = new System.Net.NetworkCredential(Mail_ID.Text, Mail_PW.Text);      //보내는 사람의 계정을 알아야 보내니깐 인증하는코드
                 //MessageBox.Show("잘못된 아이디와 비밀번호 입니다.");
                 try
                 {
-                    MailAddress from = new MailAddress(Mail_ID.Text + "@gmail.com", Sender_Name.Text); //보내는사람,이름
+                    MailAddress from = new MailAddress(Mail_ID.Text + "@gmail.com", Sender_Name.Text);  //보내는사람,이름
                     MailAddress to = new MailAddress(To.Text);                //받는사람
                     MailMessage message = new MailMessage(from, to);          //보내는사람, 받는사람
                     message.Body = Context.Text;    // 메일 내용
@@ -44,7 +44,7 @@ namespace WinPhone
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("구글 계정 설정에서 보안 수준이 낮은 앱을 허용 해 주세요.    (https://myaccount.google.com/lesssecureapps)");
+                        MessageBox.Show("아이디와 비밀번호가 잘못됬거나\n구글 계정 설정에서 보안 수준이 낮은 앱을 허용하였는지 확인해 주세요.    (https://myaccount.google.com/lesssecureapps)");
                     }
                 }
                 catch (Exception)
