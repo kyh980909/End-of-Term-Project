@@ -33,7 +33,12 @@ namespace WinPhone
         {
             Visible = false;                // 현재 폼 감추기
             InitialGameSelect selectForm = new InitialGameSelect(); // InitialGameSelect폼 클래스 생성
+            selectForm.stage2.Enabled = false;
+            selectForm.stage3.Enabled = false;
+            selectForm.stage4.Enabled = false;
+            selectForm.stage5.Enabled = false;
             selectForm.ShowDialog();        // InitialGameSelect폼 열기
+
         }
     }
 }

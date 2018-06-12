@@ -12,9 +12,49 @@ namespace WinPhone
 {
     public partial class InitialGameSelect : Form
     {
+        public static bool check1 = false;
+        public static bool check2 = false;
+        public static bool check3 = false;
+        public static bool check4 = false;
+
         public InitialGameSelect()
         {
             InitializeComponent();
+            if (check1 && check2 && check3 && check4)
+            {
+                stage2.Enabled = true;
+                stage3.Enabled = true;
+                stage4.Enabled = true;
+                stage5.Enabled = true;
+            }
+            else if (check1 && check2 && check3)
+            {
+                stage2.Enabled = true;
+                stage3.Enabled = true;
+                stage4.Enabled = true;
+                stage5.Enabled = false;
+            }
+            else if (check1 && check2)
+            {
+                stage2.Enabled = true;
+                stage3.Enabled = true;
+                stage4.Enabled = false;
+                stage5.Enabled = false;
+            }
+            else if (check1)
+            {
+                stage2.Enabled = true;
+                stage3.Enabled = false;
+                stage4.Enabled = false;
+                stage5.Enabled = false;
+            }
+            else
+            {
+                stage2.Enabled = false;
+                stage3.Enabled = false;
+                stage4.Enabled = false;
+                stage5.Enabled = false;
+            }
         }
 
         private void Back_Click(object sender, EventArgs e)     // 뒤로가기 이미지 클릭 이벤트

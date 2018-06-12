@@ -66,6 +66,7 @@ namespace WinPhone
                         MessageBox.Show("스테이지 클리어!!");
                         MenuPanel.Visible = true;               // MenuPanel 숨기기
                         Complete.Enabled = false;
+                        InitialGameSelect.check4 = true;
                     }
                 }
                 else
